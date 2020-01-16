@@ -11,7 +11,40 @@
 .navbar {
     grid-column: 1 / -1;
     grid-row: 1 / 2;
-    background-color: var(--color-primary-light);
+    background-color: var(--color-primary-dark);
+    //border-bottom: 1px solid var(--color-secondary);
+    font-size: 1.5rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    align-items: center;
+
+    padding: 1rem;
+
+    
+    &__list {
+
+    }
+
+    &__item {
+        list-style: none;
+        display: inline;
+        margin-right: .5rem;
+
+    }
+
+    &__link {
+        text-decoration: none;
+        color: inherit;
+
+        &:hover{
+            color: var(--color-secondary);
+            transition: all .4s;
+        }
+        
+    }
+
 }
 
 .header {
@@ -35,18 +68,20 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+     
 
-        transition: all .2s;
-
-        border-right: 1px solid var(--color-secondary);
+        //border-right: 1px solid var(--color-secondary);
         //background-color: orangered;
+       
 
         &__main {
-            transform: translateX(5%);
+            
+            animation: moveInLeft 3s;
         }
 
         &__sub {
-            transform: translateX(5rem);
+            
+            animation: moveInRight 3s;
         }
     }
 
