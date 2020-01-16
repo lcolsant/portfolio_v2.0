@@ -52,3 +52,38 @@ body {
     min-height: 100vh;
 
 }
+
+
+//Animations
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+
+    80% {
+        transform: translateX(.5rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0rem);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(10rem)
+    }
+    
+    80% {
+        transform: translateX(-.5rem)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0)
+    }
+}
