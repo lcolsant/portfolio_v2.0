@@ -23,9 +23,9 @@
     padding: 1rem;
 
     
-    &__list {
+    // &__list {
 
-    }
+    // }
 
     &__item {
         list-style: none;
@@ -88,6 +88,25 @@
     &__img {
         grid-column: 5 / 9;
         background-color: var(--color-primary-dark);
+
+        display: flex;
+        justify-content: center;
+
+        &__overlay {
+            //background-color: rgba(0,0,0,0.5);
+            //background-color: orange;
+                                 
+            z-index: 2;
+        }
+        
+
+        &__vscode{
+            height: 50rem;
+            z-index: 1;
+            border-radius: 1rem;
+            filter: blur(0.1rem);
+            
+        }
     }
 }
 
