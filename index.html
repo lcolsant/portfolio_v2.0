@@ -15,25 +15,41 @@
         <nav class="navbar">
             <ul class="navbar__list">
                 <li class="navbar__item"><a href="#" class="navbar__link">Home</a></li>
-                <li class="navbar__item"><a href="#" class="navbar__link">Projects</a></li>
-                <li class="navbar__item"><a href="#" class="navbar__link">About</a></li>
-                <li class="navbar__item"><a href="#" class="navbar__link">Github</a></li>
-                <li class="navbar__item"><a href="#" class="navbar__link">LinkedIn</a></li>
+                <li class="navbar__item"><a href="#projects" class="navbar__link">Projects</a></li>
+                <li class="navbar__item"><a href="#about" class="navbar__link">About</a></li>
+                <li class="navbar__item"><a href="https://github.com/lcolsant" class="navbar__link" target="_blank">Github</a></li>
+                <li class="navbar__item"><a href="https://www.linkedin.com/in/leecolsant/" class="navbar__link" target="_blank">LinkedIn</a></li>
             </ul>
         </nav>
         <div class="header">
             <div class="header__text">
                <span class="header__text__main">Lee Colsant</span>
                <span class="header__text__sub">Web Developer</span> 
+               <a href="#" class="btn header__btn">Projects</a>
             </div>
+            
             <div class="header__img">
-                <div class="header__img__overlay">
+                <div class="header__img__container--1">
                     <img src="./img/vscode.png" alt="vscode" class="header__img__vscode">
                 </div>
+                <div class="header__img__container--2">
+                    <img src="./img/laptop.gif" alt="laptop" class="header__img__laptop">
+                </div>
             </div>
+           
         </div>
         <div class="main">
-            Main
+            <div class="main__projects" id="projects">
+                <div class="main__projects__img">
+                    <img src="./img/natours.png" alt="natours" class="main__projects__img--1">
+                </div>
+                <div class="main__projects__desc">
+                    <h3>Natours</h3>
+                    <p class="main__projects__desc__p">I built the Natours outdoor tours website as part of an advanced CSS course. Credit to course instructor Jonas Schmedtmann for the website design. Uses Sass preprocessor with variables, mixins, nesting and functions. Completely responsive design, optimized for desktop and mobile devices.</p>
+                    <a href="#" class="btn">See Demo</a>
+                    <a href="#" class="btn">Github</a>
+                </div>
+            </div>
         </div>
         <footer class="footer">
             <div class="footer__icons">
