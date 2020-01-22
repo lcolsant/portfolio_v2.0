@@ -13,7 +13,7 @@
   --color-grey-dark-3: #999;
   --shadow-dark: 0 2rem 6rem rgba(0,0,0,.3);
   --shadow-light: 0 2rem 5rem rgba(0,0,0,.06);
-  --line: 1px solid var(--color-grey-light-2); }
+  --line: 5px solid var(--color-grey-light-2); }
 
 * {
   margin: 0;
@@ -32,7 +32,7 @@ html {
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: lightgray;
+  background-color: var(--color-primary-dark);
   color: var(--color-grey-dark-2);
   min-height: 100vh; }
 
@@ -71,18 +71,23 @@ body {
   .btn:hover {
     transform: translateY(-0.5rem); }
 
+i {
+  font-size: 4rem; }
+
 .container {
-  background-color: var(--color-grey-light-1);
+  background-color: var(--color-primary-dark);
   min-height: 100vh;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: 6rem calc(100vh - 6rem) repeat(2, 1fr);
+  grid-template-rows: 6rem calc(100vh - 6rem) 1fr max-content;
   grid-column-gap: 0.5rem; }
 
 .navbar {
   grid-column: 1 / -1;
   grid-row: 1 / 2;
   background-color: var(--color-primary-dark);
+  opacity: .85;
   font-size: 1.5rem;
   display: flex;
   flex-direction: row;
@@ -161,19 +166,24 @@ body {
   grid-column: 1 / -1;
   grid-row: 3 / 4;
   background-color: var(--color-grey-light-1); }
-  .main__projects {
+  .main__projects__row {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); }
-    .main__projects__img {
-      grid-column: 1 / 2; }
-      .main__projects__img--1 {
-        width: 100%; }
-    .main__projects__desc {
-      grid-column: 2 / 3;
-      padding: 1.5rem;
-      font-size: 1.2rem; }
-      .main__projects__desc__p {
-        margin: 1rem 0; }
+    grid-template-columns: repeat(3, 1fr);
+    border-bottom: var(--line); }
+  .main__projects__img {
+    grid-column: 1 / 2; }
+    .main__projects__img--1 {
+      width: 100%; }
+  .main__projects__desc {
+    grid-column: 2 / 3;
+    padding: 1.5rem;
+    font-size: 1.2rem; }
+    .main__projects__desc__p {
+      margin: 1rem 0; }
+  .main__projects__tech {
+    grid-column: 3 / 4;
+    padding: 1.5rem;
+    font-size: 1.2rem; }
 
 .footer {
   grid-column: 1 / -1;
