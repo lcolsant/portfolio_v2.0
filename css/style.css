@@ -11,6 +11,7 @@
   --color-grey-dark-1: #333;
   --color-grey-dark-2: #777;
   --color-grey-dark-3: #999;
+  --shadow-extra-dark: 0px 10px 50px #555;
   --shadow-dark: 0 2rem 6rem rgba(0,0,0,.3);
   --shadow-light: 0 2rem 5rem rgba(0,0,0,.06);
   --line: 5px solid var(--color-grey-light-2); }
@@ -109,7 +110,7 @@ i {
 .header {
   grid-column: 1 / -1;
   grid-row: 2 / 3;
-  background-color: var(--color-primary-dark);
+  background-image: linear-gradient(to right, var(--color-primary-dark), var(--color-primary-light));
   display: grid; }
   .header__text {
     grid-column: 1 / 5;
@@ -169,22 +170,42 @@ i {
   .main__projects__row {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 30rem;
+    grid-template-rows: 25rem;
+    padding: 1rem;
     border-bottom: var(--line);
     overflow: hidden; }
     .main__projects__row:last-child {
       border-bottom: none; }
   .main__projects__img {
-    grid-column: 1 / 2; }
+    grid-column: 1 / 2;
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem; }
     .main__projects__img--1 {
-      width: 100%; }
-    .main__projects__img--2 {
       width: 100%;
-      transform: scale(150%); }
+      box-shadow: var(--shadow-dark);
+      border-radius: 3px; }
+      .main__projects__img--1:hover {
+        transform: scale(1.02);
+        transition: all .3s; }
+    .main__projects__img--2 {
+      height: 100%;
+      border-radius: 3px;
+      box-shadow: var(--shadow-extra-dark); }
+      .main__projects__img--2:hover {
+        transform: scale(1.02);
+        transition: all .3s; }
+    .main__projects__img--3 {
+      width: 100%;
+      border-radius: 3px;
+      box-shadow: var(--shadow-dark); }
+      .main__projects__img--3:hover {
+        transform: scale(1.02);
+        transition: all .3s; }
   .main__projects__desc {
     grid-column: 2 / 3;
     padding: 1.5rem;
-    font-size: 1.6rem; }
+    font-size: 1.4rem; }
     .main__projects__desc__p {
       margin: 1rem 0; }
     .main__projects__desc__btn {
@@ -192,7 +213,13 @@ i {
       width: 10rem;
       box-shadow: var(--shadow-light);
       background-color: Transparent;
-      height: 3rem; }
+      height: 3rem;
+      font-size: 1.2rem;
+      margin: 1rem; }
+      .main__projects__desc__btn:hover {
+        background-image: linear-gradient(to bottom, var(--color-primary-light), var(--color-secondary));
+        color: var(--color-white);
+        border: none; }
   .main__projects__tech {
     grid-column: 3 / 4;
     padding: 1.5rem;
