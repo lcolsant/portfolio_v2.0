@@ -60,7 +60,7 @@
 
     &__text {
         grid-column: 1 / 5;
-        font-size: 4rem;
+        font-size: 5rem;
         font-weight: 200;
         color: var(--color-secondary);
         //text-transform: uppercase;
@@ -171,7 +171,13 @@
         &__row {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 30rem;
             border-bottom: var(--line);
+            overflow: hidden;
+
+            &:last-child{
+                border-bottom: none;
+            };
         }
 
         &__img {
@@ -179,29 +185,45 @@
 
             &--1 {
                 width: 100%;
+                
             }
 
             &--2 {
                 width: 100%;
+                transform: scale(150%);
             }
         }
 
         &__desc {
             grid-column: 2 / 3;
             padding: 1.5rem;
-            font-size: 1.2rem;
+            font-size: 1.6rem;
+            
             
 
             &__p {
                 margin: 1rem 0;
                 
             }
+
+            &__btn {
+                display: inline-block;
+                width: 10rem;
+                box-shadow: var(--shadow-light);
+                background-color: Transparent;
+                height: 3rem;
+               
+            }
         }
 
         &__tech {
             grid-column: 3 / 4;
             padding: 1.5rem;
-            font-size: 1.2rem;
+            font-size: 1.6rem;
+            
+            &__logo {
+                margin-top: 1rem;
+            }
         }
     }
 }
