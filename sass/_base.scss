@@ -4,6 +4,8 @@
     --color-primary-dark: #002554;
     
     --color-secondary: #00cc99;
+    --color-tertiary: #EF946C;
+    --color-tertiary-light: #F6BD60;
 
     --color-grey-light-1: #f6f6f6;
     --color-grey-light-2: #f4f2f2;
@@ -87,5 +89,21 @@ body {
     100% {
         opacity: 1;
         transform: translate(0)
+    }
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(10rem);
+    }
+
+    80% {
+        transform: translateY(-.5rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0rem);
     }
 }

@@ -2,23 +2,24 @@
     height: 3.5rem;
     width: 12rem;
     border-radius: 2rem;
-    border: 1.5px solid var(--color-secondary);
-    background-color: var(--color-primary-dark);
-    color: var(--color-secondary);
+    //border: 1.5px solid var(--color-secondary);
+    border: 1.2px solid var(--color-tertiary-light);
+    background-color: transparent;
+    color: var(--color-tertiary-light);
     font-size: 1.6rem;
     text-decoration: none;
     text-align: center;
-    padding-top: .5rem;
+    padding-top: .6rem;
 
     transition: all .3s;
 
     &:hover {
         transform: translateY(-.5rem);   
+        background-color: var(--color-tertiary-light);
+        color: var(--color-white);
+                        
     }
 
-    // &:onclick {
-    //     transform: translateY(.5rem);
-    // }
 }
 
 i {
