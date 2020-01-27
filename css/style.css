@@ -135,53 +135,58 @@ i {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 14rem; }
+    margin: 14rem 16rem; }
     .header__text__main {
       animation: moveInLeft 2s; }
     .header__text__sub {
       animation: moveInRight 2s; }
   .header__img {
     grid-column: 5 / 9;
-    background-color: var(--color-primary-dark);
-    display: flex;
-    justify-content: center;
-    position: relative; }
-    .header__img__container--1 {
-      position: absolute;
-      top: 10rem;
-      left: -10rem;
-      z-index: 1; }
-      .header__img__container--1:hover {
-        z-index: 3; }
-    .header__img__container--2 {
-      position: absolute;
-      top: 20rem;
-      left: 0rem;
-      z-index: 2; }
+    background-color: var(--color-primary-dark); }
     .header__img * > :hover {
       transform: scale(1.05);
       filter: none;
       transition: all .3s; }
     .header__img__vscode {
-      height: 30rem;
+      width: 65%;
+      height: auto;
       border-radius: 1rem;
       filter: blur(0.05rem);
-      box-shadow: var(--shadow-dark); }
+      box-shadow: var(--shadow-dark);
+      margin-top: 4rem;
+      margin-left: -4rem;
+      position: relative;
+      z-index: 1; }
+      .header__img__vscode:hover {
+        z-index: 3;
+        transform: scale(1.05);
+        filter: none;
+        transition: all .3s; }
     .header__img__laptop {
-      height: 30rem;
+      width: 50%;
+      height: auto;
       border-radius: 1rem;
-      filter: blur(0.08rem); }
+      filter: blur(0.08rem);
+      margin-top: 16rem;
+      margin-left: -16rem;
+      margin-bottom: 2rem;
+      position: relative;
+      z-index: 2; }
+      .header__img__laptop:hover {
+        transform: scale(1.05);
+        filter: none;
+        transition: all .3s; }
   .header__btn {
-    grid-row: 2 / 3;
     grid-column: 2 / 4;
-    margin-top: 20rem;
+    margin-top: 10rem;
     text-align: center;
     animation: moveInBottom 2s; }
 
 .main {
   grid-column: 1 / -1;
   grid-row: 3 / 4;
-  background-color: var(--color-grey-light-1); }
+  background-color: var(--color-grey-light-1);
+  z-index: 4; }
   .main__projects__row {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
