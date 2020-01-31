@@ -5,7 +5,7 @@
 
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: 6rem calc(100vh - 6rem) 1fr max-content;
+    grid-template-rows: 6rem calc(100vh - 6rem) 1fr 70rem max-content;
     grid-column-gap: 0.5rem;
 }
 
@@ -345,11 +345,31 @@
     }
 }
 
-.footer {
+.contact {
     grid-column: 1 / -1;
     grid-row: 4 / 5;
+    
+    display: grid;
+    grid-template-columns: 2;
+
+    background-color: var(--color-grey-light-1);
+    background-image: linear-gradient(
+        to right bottom, 
+        rgba(white, 0.9),
+        rgba(white, 0.9)),
+        url(../img/aboutMe.jpg);
+    background-size: cover;
+    background-position: center;
+    //position: relative;
+
+}
+
+.footer {
+    grid-column: 1 / -1;
+    grid-row: 5 / 6;
     background-color: var(--color-primary-dark);
     color: var(--color-grey-light-4);
+    
 
     display: flex;
     flex-direction: column;
@@ -363,6 +383,14 @@
         margin: 0.5rem;
         padding: 0.5rem;
         font-size: 2.2rem;
+
+        &--1:hover,&--2:hover {
+            transform: scale(1.05);
+            color: var(--color-secondary);
+            transition: all .3s;
+            
+        }
+        
     }
 
     a {
