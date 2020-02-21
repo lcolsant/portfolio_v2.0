@@ -12,13 +12,14 @@
 </head>
 <body>
     <div class="container" id="top">
-        <nav class="navbar" >
+        <nav class="navbar" id="topnav">
             <ul class="navbar__list">
                 <li class="navbar__item"><a href="#top" class="navbar__link">Home</a></li>
                 <li class="navbar__item"><a href="#projects" class="navbar__link">Projects</a></li>
                 <li class="navbar__item"><a href="#contact" class="navbar__link">Contact</a></li>
                 <li class="navbar__item"><a href="https://github.com/lcolsant" class="navbar__link" target="_blank">Github</a></li>
                 <li class="navbar__item"><a href="https://www.linkedin.com/in/leecolsant/" class="navbar__link" target="_blank">LinkedIn</a></li>
+                <li class="navbar__item"><a href="javascript:void(0);" class="navbar__link__icon" onclick="myFunction()">&#9776;</a></li>
             </ul>
         </nav>
         <div class="header">
@@ -213,8 +214,8 @@
 
     </div>
 
-    <!--smmooth scroll script-->
     <script>
+        // smmooth scroll script
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -224,6 +225,17 @@
                 });
             });
         });       
+
+        // responsive navbar
+        function myFunction() {
+            var x = document.getElementById("topnav");
+            if (x.className === "navbar") {
+                x.className += "__responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+
     </script>
 </body>
 </html>
