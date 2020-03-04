@@ -13,14 +13,13 @@
 <body>
     <div class="container" id="top">
         <nav class="navbar" id="topnav">
-            <ul class="navbar__list">
-                <li class="navbar__item"><a href="#top" class="navbar__link">Home</a></li>
-                <li class="navbar__item"><a href="#projects" class="navbar__link">Projects</a></li>
-                <li class="navbar__item"><a href="#contact" class="navbar__link">Contact</a></li>
-                <li class="navbar__item"><a href="https://github.com/lcolsant" class="navbar__link" target="_blank">Github</a></li>
-                <li class="navbar__item"><a href="https://www.linkedin.com/in/leecolsant/" class="navbar__link" target="_blank">LinkedIn</a></li>
-                <li class="navbar__item"><a href="javascript:void(0);" class="navbar__link__icon" onclick="myFunction()">&#9776;</a></li>
-            </ul>
+            <!-- <ul class="navbar__list"> -->
+                <!-- <li class="navbar__item"> --><a href="#top" class="navbar__link">Home</a><!--</li> -->
+                <a href="#projects" class="navbar__link">Projects</a>
+                <a href="#contact" class="navbar__link">Contact</a>
+                <a href="https://github.com/lcolsant" class="navbar__link" target="_blank">Github</a>
+                <a href="https://www.linkedin.com/in/leecolsant/" class="navbar__link" target="_blank">LinkedIn</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </nav>
         <div class="header">
             <div class="header__text">
@@ -229,6 +228,7 @@
         // responsive navbar
         function myFunction() {
             var x = document.getElementById("topnav");
+            console.log(x)
             if (x.className === "navbar") {
                 x.className += "__responsive";
             } else {
