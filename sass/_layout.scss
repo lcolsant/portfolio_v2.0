@@ -31,7 +31,7 @@
 
 
 .navbar a {
-    margin-right: 3rem;
+    //margin-right: 3rem;
     color: inherit;
     text-decoration: none;
     
@@ -59,9 +59,13 @@
             text-decoration: none;
             position: absolute;
             top: 1rem;
-            right: 2rem;
+            //right: 2rem;
         }
     }
+}
+
+.navbar a:not(:last-child) {
+    margin-right: 3rem;
 }
 
 @media only screen and (max-width: $bp-small) {
@@ -90,7 +94,7 @@
             text-decoration: none;
             position: absolute;
             top: 1rem;
-            right: 2rem;
+            right: 1rem;
         }
     }
 }
@@ -433,14 +437,14 @@
 
                 //transition: transform all .2s;
 
-                &:hover {
+              //  &:hover {
                     
                     //background-image: linear-gradient(to bottom,var(--color-tertiary-light),var(--color-tertiary-light));
                     // background-color: var(--color-tertiary-light);
                     // color: var(--color-white);
                     // border: none;
                     
-                }
+                //}
                
             }
         }
