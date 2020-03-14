@@ -345,28 +345,37 @@ i {
       border-bottom: none; }
   .main__projects__img {
     grid-column: 1 / 2;
-    display: flex;
-    justify-content: center;
     padding: 1.5rem; }
     @media only screen and (max-width: 37.5em) {
       .main__projects__img {
         grid-column: 1 / -1;
-        overflow: hidden;
-        width: 100%; } }
+        overflow: hidden; } }
     .main__projects__img--1 {
       width: 100%;
       box-shadow: var(--shadow-dark);
       border-radius: 3px; }
+      @media only screen and (max-width: 37.5em) {
+        .main__projects__img--1 {
+          width: 90%;
+          display: block;
+          margin: 4rem auto; } }
       .main__projects__img--1:hover {
         transform: scale(1.1);
         transition: all .3s; }
     .main__projects__img--2 {
       height: 100%;
       border-radius: 3px;
-      box-shadow: var(--shadow-extra-dark); }
+      box-shadow: var(--shadow-extra-dark);
+      display: block;
+      margin: 0 auto; }
       .main__projects__img--2:hover {
         transform: scale(1.1);
         transition: all .3s; }
+      @media only screen and (max-width: 37.5em) {
+        .main__projects__img--2 {
+          height: 90%;
+          display: block;
+          margin: 1rem auto; } }
     .main__projects__img--3 {
       width: 100%;
       border-radius: 3px;
@@ -374,6 +383,11 @@ i {
       .main__projects__img--3:hover {
         transform: scale(1.1);
         transition: all .3s; }
+      @media only screen and (max-width: 37.5em) {
+        .main__projects__img--3 {
+          width: 90%;
+          display: block;
+          margin: 4rem auto; } }
     .main__projects__img--4 {
       width: 100%;
       border-radius: 3px;
@@ -381,6 +395,11 @@ i {
       .main__projects__img--4:hover {
         transform: scale(1.1);
         transition: all .3s; }
+      @media only screen and (max-width: 37.5em) {
+        .main__projects__img--4 {
+          width: 90%;
+          display: block;
+          margin: 4rem auto; } }
     .main__projects__img--5 {
       height: 100%;
       border-radius: 3px;
@@ -388,6 +407,11 @@ i {
       .main__projects__img--5:hover {
         transform: scale(1.1);
         transition: all .3s; }
+      @media only screen and (max-width: 37.5em) {
+        .main__projects__img--5 {
+          height: 90%;
+          display: block;
+          margin: 1rem auto; } }
   .main__projects__desc {
     grid-column: 2 / 3;
     padding: 1.5rem;
@@ -430,7 +454,7 @@ i {
     font-size: 1.5rem; }
     @media only screen and (max-width: 75em) {
       .contact__form {
-        font-size: 1rem; } }
+        font-size: 1.2rem; } }
     .contact__form__input {
       display: grid;
       grid-template-rows: 4;

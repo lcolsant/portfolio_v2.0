@@ -142,9 +142,6 @@
         justify-content: center;
         align-items: center;
         padding: 0 10rem;
-        //margin: 14rem 16rem;
-     
-
 
         &__main {
             
@@ -316,7 +313,6 @@
         
         text-align: center;
         animation: moveInBottom 2s;
-        //align-items: flex-end;
 
         @media only screen and (max-width: $bp-medium-small) {
             margin-top: 5rem;
@@ -349,8 +345,6 @@
 
     &__projects {
 
-        // display: grid;
-        // grid-template-columns: repeat(3, 1fr);
 
         &__row {
             display: grid;
@@ -370,14 +364,12 @@
 
         &__img {
             grid-column: 1 / 2;
-            display: flex;
-            justify-content: center;
             padding: 1.5rem;
 
             @media only screen and (max-width: $bp-small) {
                 grid-column: 1 / -1;
                 overflow: hidden;
-                width: 100%;
+                //width: 100%;
     
             }
 
@@ -385,6 +377,14 @@
                 width: 100%;
                 box-shadow: var(--shadow-dark);
                 border-radius: 3px;
+
+
+                @media only screen and (max-width: $bp-small) {
+                    width: 90%;
+                    display: block;
+                    margin: 4rem auto;
+        
+                }
                 
 
                 &:hover {
@@ -396,20 +396,29 @@
 
             &--2 {
                 height: 100%;
-                //width: 100%;
+                //
                 border-radius: 3px;
                 box-shadow: var(--shadow-extra-dark);
+                display: block;
+                margin: 0 auto;
+
                 
                 &:hover {
                     transform: scale(1.10);
                     transition: all .3s;
 
                 }
+
+                @media only screen and (max-width: $bp-small) {
+                    height: 90%;
+                    display: block;
+                    margin: 1rem auto;
+        
+                }
             }
 
 
             &--3 {
-                //width: 90%;
                 width: 100%;
                 border-radius: 3px;
                 box-shadow: var(--shadow-dark);
@@ -418,6 +427,14 @@
                     transform: scale(1.10);
                     transition: all .3s;
 
+                }
+
+
+                @media only screen and (max-width: $bp-small) {
+                    width: 90%;
+                    display: block;
+                    margin: 4rem auto;
+        
                 }
             }
 
@@ -432,6 +449,14 @@
                     transition: all .3s;
 
                 }
+
+
+                @media only screen and (max-width: $bp-small) {
+                    width: 90%;
+                    display: block;
+                    margin: 4rem auto;
+        
+                }
             }
 
             &--5 {
@@ -444,6 +469,13 @@
                     transform: scale(1.10);
                     transition: all .3s;
 
+                }
+
+                @media only screen and (max-width: $bp-small) {
+                    height: 90%;
+                    display: block;
+                    margin: 1rem auto;
+        
                 }
             }
         }
@@ -513,18 +545,14 @@
 
     &__form {
 
-        //grid-column: 1 / 4;
         padding: 2rem;
         font-size: 1.5rem;
       
         @media only screen and (max-width: $bp-largest) {
-            font-size: 1rem;
+            font-size: 1.2rem;
             
         }
      
-        //border: 1px solid blue;
-
-        
 
         &__input {
             
@@ -535,7 +563,6 @@
             grid-column-gap: 4rem;
             align-items: top;
             
-            //border: 1px solid red;
             padding: 1.5rem 2rem;
             border: none;
             border-bottom: 3px solid transparent;
