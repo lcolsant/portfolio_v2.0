@@ -112,7 +112,7 @@ i {
   font-size: 4rem; }
   @media only screen and (max-width: 56.25em) {
     i {
-      font-size: 2.5rem; } }
+      font-size: 2.0rem; } }
 
 .container {
   background-color: var(--color-primary-dark);
@@ -140,6 +140,13 @@ i {
   justify-content: flex-end;
   align-items: center;
   padding: 1rem; }
+  @media only screen and (min-width: 56.25em) {
+    .navbar {
+      position: relative;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      transition: 0.8s; } }
 
 .navbar a {
   margin-right: 3rem;
@@ -165,7 +172,8 @@ i {
         display: block;
         text-decoration: none;
         position: absolute;
-        top: 1rem; } }
+        top: 1rem;
+        right: 1.4rem; } }
 
 @media only screen and (max-width: 56.25em) {
   .navbar__responsive {
@@ -193,7 +201,7 @@ i {
       position: absolute;
       font-size: 3rem;
       top: 1rem;
-      right: 1rem;
+      right: 1.4rem;
       padding: 0; }
       .navbar__responsive a.icon:hover {
         background-color: transparent;
@@ -240,7 +248,8 @@ i {
     @media only screen and (max-width: 37.5em) {
       .header__text {
         grid-column: 1 / -1;
-        font-size: 2.5rem; } }
+        font-size: 2.5rem;
+        margin-bottom: 2rem; } }
   .header__img {
     grid-column: 5 / 9;
     background-color: var(--color-primary-dark);
@@ -336,7 +345,7 @@ i {
       width: 100%; } }
   .main__projects__row {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 33.33%);
     grid-template-rows: 25rem;
     padding: 1rem;
     border-bottom: var(--line);
