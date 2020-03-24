@@ -31,7 +31,7 @@
     justify-content:flex-end;
     align-items: center;
 
-    padding: 1rem;
+    padding: 1.2rem;
 
 
     @media only screen and (min-width: $bp-medium) {
@@ -48,7 +48,10 @@
 
 .navbar a {
     margin-right: 3rem;
-    color: inherit;
+    margin-bottom: .6rem;
+    //padding: 1rem;
+    //color: inherit;
+    color: var(--color-grey-dark-3);
     text-decoration: none;
     
 
@@ -478,12 +481,13 @@
 
                 }
 
-                @media only screen and (max-width: $bp-small) {
-                    height: 90%;
+                @media only screen and (max-width: $bp-medium-small) {
+                    height: 80%;
                     display: block;
                     margin: 1rem auto;
         
                 }
+
             }
         }
 
@@ -494,7 +498,7 @@
 
             @media only screen and (max-width: $bp-medium) {
                 
-                font-size: 1.2rem;
+                font-size: 1.0rem;
             }
 
             @media only screen and (max-width: $bp-small) {
