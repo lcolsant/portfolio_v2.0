@@ -29,7 +29,7 @@
     display: flex;
     flex-direction: row;
     justify-content:flex-end;
-    align-items: center;
+    //align-items: center;
 
     padding: 1.2rem;
 
@@ -48,7 +48,7 @@
 
 .navbar a {
     margin-right: 3rem;
-    margin-bottom: .6rem;
+    //margin-bottom: .6rem;
     //padding: 1rem;
     //color: inherit;
     color: var(--color-grey-dark-3);
@@ -560,6 +560,10 @@
         font-size: 1.5rem;
       
         @media only screen and (max-width: $bp-largest) {
+            font-size: 1.4rem;
+            
+        }
+        @media only screen and (max-width: $bp-medium) {
             font-size: 1.2rem;
             
         }
@@ -577,6 +581,11 @@
             padding: 1.5rem 2rem;
             border: none;
             border-bottom: 3px solid transparent;
+
+            @media only screen and (max-width: $bp-largest) {
+                grid-template-columns: 1fr;
+                
+            }
 
   
 
@@ -597,6 +606,12 @@
             &__header--1 {
                 grid-row: 1 / 2;
                 grid-column: 1 / 2;
+               
+                @media only screen and (max-width: $bp-largest) {
+                      
+                    grid-column: 1 / -1;
+                   
+                }
                 
             }
 
@@ -618,6 +633,7 @@
                 @media only screen and (max-width: $bp-largest) {
                     
                     grid-column: 1 / -1;
+                    grid-row: 4 / 5; 
                     
                 }
                 

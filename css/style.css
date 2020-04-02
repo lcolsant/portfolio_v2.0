@@ -138,7 +138,6 @@ i {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  align-items: center;
   padding: 1.2rem; }
   @media only screen and (min-width: 56.25em) {
     .navbar {
@@ -150,7 +149,6 @@ i {
 
 .navbar a {
   margin-right: 3rem;
-  margin-bottom: .6rem;
   color: var(--color-grey-dark-3);
   text-decoration: none; }
   .navbar a:hover {
@@ -461,6 +459,9 @@ i {
     font-size: 1.5rem; }
     @media only screen and (max-width: 75em) {
       .contact__form {
+        font-size: 1.4rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .contact__form {
         font-size: 1.2rem; } }
     .contact__form__input {
       display: grid;
@@ -472,6 +473,9 @@ i {
       padding: 1.5rem 2rem;
       border: none;
       border-bottom: 3px solid transparent; }
+      @media only screen and (max-width: 75em) {
+        .contact__form__input {
+          grid-template-columns: 1fr; } }
       .contact__form__input__about {
         grid-row: 2 / 3;
         grid-column: 1 / 2; }
@@ -482,6 +486,9 @@ i {
       .contact__form__input__header--1 {
         grid-row: 1 / 2;
         grid-column: 1 / 2; }
+        @media only screen and (max-width: 75em) {
+          .contact__form__input__header--1 {
+            grid-column: 1 / -1; } }
       .contact__form__input__header--2 {
         grid-row: 1 / 2;
         grid-column: 2 / 3; }
@@ -494,7 +501,8 @@ i {
         grid-column: 2 / 3; }
         @media only screen and (max-width: 75em) {
           .contact__form__input__group {
-            grid-column: 1 / -1; } }
+            grid-column: 1 / -1;
+            grid-row: 4 / 5; } }
         .contact__form__input__group__input {
           font-size: inherit;
           font-family: inherit;
