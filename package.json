@@ -2,7 +2,7 @@
   "name": "portfolio_v2.0",
   "version": "1.0.0",
   "description": "Lee Colsant portfolio website",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "sass": "node-sass sass/main.scss css/style.css -w",
     "devserver": "live-server",
@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "body-parser": "^1.19.0",
+    "ejs": "^3.0.2",
     "express": "^4.17.1",
     "mongoose": "^5.9.6"
   }
