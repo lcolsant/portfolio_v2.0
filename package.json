@@ -6,7 +6,7 @@
   "scripts": {
     "sass": "node-sass sass/main.scss css/style.css -w",
     "devserver": "live-server",
-    "server": "node server.js",
+    "server": "nodemon server.js",
     "start": "npm-run-all --parallel server sass"
   },
   "repository": {
