@@ -31,7 +31,7 @@
     justify-content:flex-end;
     //align-items: center;
 
-    padding: 1.2rem;
+    padding: 2.6rem;
 
 
     @media only screen and (min-width: $bp-medium) {
@@ -385,9 +385,15 @@
             }
 
             &--1 {
-                width: 100%;
+                width: 90%;
                 box-shadow: var(--shadow-dark);
                 border-radius: 3px;
+                display: block;
+                margin: 0 auto;
+
+                @media only screen and (min-width: $bp-largest) {
+                    width: 75%;
+                }
 
 
                 @media only screen and (max-width: $bp-small) {
@@ -430,9 +436,13 @@
 
 
             &--3 {
-                width: 100%;
+                width: 90%;
                 border-radius: 3px;
                 box-shadow: var(--shadow-dark);
+                display: block;
+                margin: 0 auto;
+
+
                 
                 &:hover {
                     transform: scale(1.10);
@@ -440,9 +450,13 @@
 
                 }
 
+                @media only screen and (min-width: $bp-largest) {
+                    width: 70%;
+                }
+
 
                 @media only screen and (max-width: $bp-small) {
-                    width: 90%;
+                    width: 85%;
                     display: block;
                     margin: 4rem auto;
         
@@ -450,10 +464,11 @@
             }
 
             &--4 {
-                //width: 90%;
-                width: 100%;
+                width: 90%;
                 border-radius: 3px;
                 box-shadow: var(--shadow-dark);
+                display: block;
+                margin: 0 auto;
                 
                 &:hover {
                     transform: scale(1.10);
@@ -461,9 +476,13 @@
 
                 }
 
+                @media only screen and (min-width: $bp-largest) {
+                    width: 70%;
+                }
+
 
                 @media only screen and (max-width: $bp-small) {
-                    width: 90%;
+                    width: 85%;
                     display: block;
                     margin: 4rem auto;
         
@@ -475,6 +494,8 @@
                 height: 100%;
                 border-radius: 3px;
                 box-shadow: var(--shadow-dark);
+                display: block;
+                margin: 0 auto;
                 
                 &:hover {
                     transform: scale(1.10);

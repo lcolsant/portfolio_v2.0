@@ -1,6 +1,6 @@
 //database require and connect
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/portfolio', {useNewUrlParser: true});
+mongoose.connect('mongodb://localhost/portfolio', {useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true});
 mongoose.connection.on('connected', ()=>console.log('Connected to MongoDB...'));
 
     //db Schema and Model

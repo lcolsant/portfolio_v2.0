@@ -1,5 +1,6 @@
 
 require('../database/database.js');
+
 const Message = require('mongoose').model('Message');
 
 //alternative import
@@ -25,6 +26,9 @@ module.exports = function Route(app){
         const nameRegex = new RegExp(/^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/);
         const emailRegex = new RegExp(/^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/);
 
+        console.log(`Name: ${req.body.name}`);
+        console.log(`Email: ${req.body.email}`);
+
         if(nameRegex.test(req.body.name)){
         console.log('valid name');
         }else{
@@ -46,11 +50,11 @@ module.exports = function Route(app){
         return string.replace(/[.*+\-?^${}()|[\]\\]/g, '\\$&'); 
         }
         
-
         
         if(errors){
-        console.log('posted data contains errors. not saved to DB')
-        res.render('index');
+            console.log('posted data contains errors. not saved to DB')
+            //res.render('index');
+            res.redirect('/');
 
         }else{
 
@@ -63,11 +67,11 @@ module.exports = function Route(app){
 
         message.save(function(err){
             if(err){
-            console.log('valid data, error attempting to save to db');
+                console.log('valid data, error attempting to save to db');
             }else{
-            console.log('successfully added a message!');
-            //res.redirect('/');
-            res.render('index');
+                console.log('successfully added a message!');
+                res.redirect('/');
+                //res.render('index');
             }
         });
         }
