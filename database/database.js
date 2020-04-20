@@ -1,10 +1,4 @@
 let keys = require( '../keys/keys');
-
-
-console.log(keys.user);
-console.log(keys.pass);
-
-//database require and connect
 var mongoose = require('mongoose');
 
 //localhost development db
