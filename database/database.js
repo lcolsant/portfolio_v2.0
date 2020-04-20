@@ -1,7 +1,22 @@
+let keys = require( '../keys/keys');
+
+
+console.log(keys.user);
+console.log(keys.pass);
+
 //database require and connect
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/portfolio', {useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true});
+
+//localhost development db
+//mongoose.connect('mongodb://localhost/portfolio', {useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true});
+
+//production db - MongoDB Atlas
+mongoose.connect(`mongodb+srv://${keys.user}:${keys.pass}@portfolio-vh4wq.mongodb.net/test?retryWrites=true&w=majority`, {useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true});
+
+
 mongoose.connection.on('connected', ()=>console.log('Connected to MongoDB...'));
+
+
 
     //db Schema and Model
 var MessageSchema = new mongoose.Schema ({
