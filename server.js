@@ -6,7 +6,7 @@ const app = express();
 //relaod require
 app.set('port', process.env.PORT || 8000)
 const http = require('http');
-const reload = require('reload')
+//const reload = require('reload')
 
 
 var bodyParser = require('body-parser');
@@ -23,15 +23,16 @@ app.set('views', path.join(__dirname, './views'));
 require('./routes/routes.js')(app);
 
 
+
 // app.listen(port, function(){
 //     console.log(`listening on port ${port}.`);
 // });
 
 
-// Reload code here
+// Reload development code here
 const server = http.createServer(app);
 server.listen(app.get('port'), () => console.log('Server listening on port ' + app.get('port') ));
-reload(app);
+//reload(app);
 
 
 
