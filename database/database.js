@@ -4,7 +4,7 @@ var mongoose = require('mongoose');
 //mongoose.connect('mongodb://localhost/portfolio', {useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true});
 
 //production db - MongoDB Atlas
-mongoose.connect(`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@portfolio-vh4wq.mongodb.net/test?retryWrites=true&w=majority`, {useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true});
+mongoose.connect(`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@portfolio-vh4wq.mongodb.net/portfolio?retryWrites=true&w=majority`, {useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true});
 
 
 mongoose.connection.on('connected', ()=>console.log('Connected to MongoDB...'));
