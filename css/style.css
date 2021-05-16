@@ -290,10 +290,9 @@ i {
           margin-top: 2rem;
           margin-bottom: 4rem; } }
     .header__img__laptop {
-      width: 44rem;
+      width: 54rem;
       height: auto;
       border-radius: 1rem;
-      filter: blur(0.08rem);
       margin-top: -18rem;
       margin-left: 15rem;
       margin-bottom: 1rem;
